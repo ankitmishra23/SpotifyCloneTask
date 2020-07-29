@@ -13,6 +13,6 @@ namespace SpotifyTask.Request
         public string Gender { get; set; }
         public string Location { get; set; }
         public string Phone { get; set; }
-        public DateTime CreatedOn { get; set; }
+       
     }
 }
