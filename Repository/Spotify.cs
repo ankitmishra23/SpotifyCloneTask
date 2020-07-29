@@ -127,7 +127,7 @@ namespace SpotifyTask.Repository
                 result.Gender = user.Gender;
                 result.Location = user.Location;
                 result.Phone = user.Phone;
-                result.CreatedOn = user.CreatedOn;
+                result.CreatedOn = DateTime.Now;
 
                 db.SaveChanges();
                 return true;
