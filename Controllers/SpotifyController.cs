@@ -137,10 +137,10 @@ namespace SpotifyTask.Controllers
             return Ok(repository.GetUserDetailsByName(name));
         }
 
-        [HttpGet("getplaylistidbyname/{name}")]
-        public IActionResult GetPlaylistIdByName(string name)
+        [HttpGet("getplaylistidbyname/{name}/{id}")]
+        public IActionResult GetPlaylistIdByName(string name,int id)
         {
-            return Ok(repository.GetPlaylistIdByName(name));
+            return Ok(repository.GetPlaylistIdByName(name,id));
         }
 
         [HttpGet("getsongidbyname/{name}")]
