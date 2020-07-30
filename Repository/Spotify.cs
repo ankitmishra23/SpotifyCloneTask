@@ -256,9 +256,9 @@ namespace SpotifyTask.Repository
             }
             return null;
         }
-        public int GetPlaylistIdByName(string name)
+        public int GetPlaylistIdByName(string name,int id)
         {
-            var result = db.Playlists.FirstOrDefault(a => a.PlaylistName == name);
+            var result = db.Playlists.FirstOrDefault(a => a.PlaylistName == name && a.UserId==id);
             if (result != null)
             {
                 return result.PlaylistId;
