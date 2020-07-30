@@ -47,7 +47,7 @@ namespace SpotifyTask.Repository
 
         User GetUserDetailsByName(string name);
 
-        int GetPlaylistIdByName(string name);
+        int GetPlaylistIdByName(string name,int id);
 
         int GetSongIdByName(string name);
 
